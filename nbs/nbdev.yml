@@ -1,0 +1,9 @@
+project:
+  output-dir: _docs
+
+website:
+  title: "QA_Project"
+  site-url: "https://c123ian.github.io/QA_Project"
+  description: "QA Project"
+  repo-branch: main
+  repo-url: "https://github.com/c123ian/QA_Project"
