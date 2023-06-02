@@ -1,0 +1,1052 @@
+Questions,Answers
+"We provide you a variety of support related videos on our DELL EMC Support YouTube channel. We publish at least one new video every week so make sure you subscribe and stay up to date with the latest turoials, tipps and tricks about server, storage and networking.
+ 
+Here are some playlist you might find helpful for your daily business regarding DELL EMC Enterprise hardware.
+
+OpenManage Server Administrator 
+RAID - Tutorials, Information and Troubleshooting 
+Dell EMC QuickTips - something about everything 
+iDRAC - Setup, Configuration, Troubleshooting 
+Dell Lifecycle Controller 
+SupportAssist Enterprise Virtual Edition 
+
+You can find the full list here.
+ 
+Something is missing? Got a topic we should cover in one of our videos? Feel free to suggest new topics and give us feedback to existing ones in this thread.","Hi All,
+there are 2 new videos up on the channel. As always a Quick Tip Video on Service Tag locations and in addition we show you how to install OMSA on  ESXi 6.7
+And don't forget to like the videos and subscribe to our channel for all the latest updates!"
+"Hi,I haven't used my PowerEdge T620 in a year or so. When I just turned it ON, it says:Configuring Memory....and that's it. Nothing happens. It has been doing this for 30 minutes now. I remember having done something like this over a year ago and it did the same thing. I believe I waited for hours and then turned it off. Anyhow, does anyone know what the problem could be? I have 64GB installed and maybe I can take out some memory sticks and see what happens. If that is a good idea, I would need to know in which slots I then have to plug in the memory. The manual is a bit funkt when wanting to use 32GB with 8GB sticks... Thanks.
+
+
+
+					
+						
+					
+					.","Hi, what Joey means is that if you have a pc, another topic should be opened for it. For T620, I think it's in no post status.
+You can make drain power at first as a few steps you can try.
+Drain server flea power and check for any error messages during POST
+1) Remove any external peripherals from the server
+2) Turn system off and remove input power from the server
+3) Hold down power button for 10 seconds with power unplugged and then wait for one minute
+4) Re-apply input power and turn system on.
+ 
+Please try to min2post https://dell.to/3IIIkVOOne processor (CPU) in socket processor 1One memory module (DIMM) in socket A1One power supply unit
+https://dell.to/3IM2leb
+System Board Jumper Settings
+
+
+For information on resetting the password jumper to disable a password, see Disabling A Forgotten Password.
+
+Table 1. System Board Jumper Settings
+
+
+JUMPER
+SETTING
+DESCRIPTION
+
+
+
+
+PWRD_EN
+ (default)
+The password feature is enabled (pins 2–4).
+
+
+ 
+
+The password feature is disabled (pins 4–6). BIOS local access is unlocked at the next AC power cycle.
+
+
+NVRAM_CLR
+(default)
+The configuration settings are retained at the next system boot (pins 3–5).
+
+
+ 
+
+The configuration settings are cleared at system boot (pins 1–3).
+
+
+
+
+
+
+
+
+Thanks,Erman ÖzkurtSocial Media and Communities Professional Dell Technologies | Enterprise Support Services #IWork4DellDid I answer your query? Please click on ‘Accept as Solution’. ‘Kudo’ the posts you like!
+
+
+
+"
+"Hi
+I'm not sure what they are called but my PE2950 is missing the side 'mushrooms' for rack mounting. These are the parts that fit onto the threaded studs in the side of the chassis (3 each side) that then drop into the sliding rails. The bits circled in red:
+
+Is it possible to buy these from Dell? I've not managed to find anything so far.
+Thanks,
+
+Simon
+
+
+
+					
+						
+					
+					.","Unfortunately they come with the chassis and are not offered by Dell for sale that I can find. I did find a compatible set here - www.racksolutions.com/shoulder-screws-nuts.html
+Let me know if this helps.
+
+DELL-Chris HSocial Media and Communities ProfessionalDell Technologies | Enterprise Support Services#IWork4DellDid I answer your query? Please click on ‘Accept as Solution’. ‘Kudo’ the posts you like!
+
+
+
+"
+"Hi All !
+Does anyone know of a Cuda PCIe 3.0 video card that will work in PowerEdge T330 and T430 server? 
+Especially GeForce GTX 1080 Ti. I need it only for GPU coprocessor purposes.
+Thanks for any suggestions.
+Vlad.
+
+
+
+					
+						
+					
+					.","Hello.
+The T330 server does not support GPU cards. GeForce GTX 1080 Ti has not been tested and certified to function on the T430 server. It may(not) work. Below are details of GPU cards that have been tested on T430 server.
+
+
+However, for any of these cards to operate correctly, you will need: 
+
+Redundant PSU configuration (PIB)
+One 1100 W power supply
+GPU power cable (DPN#: DRXPD)
+
+Thank you.
+
+
+"
+"Hi, I think the BIOS settings will default after a CMOS battery replacement. But please, can someone confirm this?I have PowerEdge R430.Also, is any way to backup BIOS settings over iDRAC 8?TY TY TY.
+
+
+
+					
+						
+					
+					.","Hello Alexander,
+ 
+You are correct. If the battery is out for any length of time the BIOS would revert to defaults.
+ 
+If you have the iDRAC Enterprise license you can Back up the server profile
+https://dell.to/3WOQlhW
+ 
+Backup server profile
+Use this licensed feature to perform the following and store the backup image files in a vFlash SD card:
+*Back up the following:
+*Hardware and firmware inventory such as BIOS, NDCs, Lifecycle Controller supported add-in NIC cards, and Storage Controllers (RAID level, virtual disk, and controller attributes)
+*System information
+*Lifecycle Controller firmware images, data and configuration, and iDRAC firmware and configuration
+*Optionally, secure the backup image file with a passphrase.
+ 
+I think the BIOS in the firmware inventory is just the firmware version. I don't see a way to back up the individual BIOS settings.
+You may go through the BIOS and note down any specific settings or take pictures of the BIOS pages with the custom settings you have.
+ 
+Video guide: Dell Lifecycle Controller to Backup Server Profile
+https://dell.to/3qkR527
+ 
+
+Dell -Charles RSocial Media and Communities ProfessionalDell Technologies | Enterprise Support Services#IWork4DellDid I answer your query? Please click on ‘Accept as Solution’. ‘Kudo’ the posts you like!
+
+
+
+"
+"Hi,Since nothing is working on my T620 and its completely dead, I thought about checking if maybe the Front Panel is broken, and reseating the cables might do something. However, I cannot get the Panel out? I watched a video on how to do it, which is just loosening one screw, but that did not work for me. How do I get the dang thing out???Second question: If indeed my Motherboard is broken, wouldn't there still be power on the front panel? I mean, isn't that what the Panel is for, to tell you if and what is not working properly?Anything helps.Thanks.
+
+
+
+					
+						
+					
+					.","Navissa,
+ 
+It could be a couple things, such as that your configuration may require removing the cooling fan assembly. You can find the details on page 114 here.
+ 
+Let me know if this helps.
+ 
+ 
+
+DELL-Chris HSocial Media and Communities ProfessionalDell Technologies | Enterprise Support Services#IWork4DellDid I answer your query? Please click on ‘Accept as Solution’. ‘Kudo’ the posts you like!
+
+
+
+"
+"Dell PowerEdge R730. System has two Intel(R) Xeon(R) CPU E5-2687W v4 @ 3.00GHz processors and the following memory.A1 16.00 GBA2 32.00 GBA3 32.00 GBA4 32.00 GBA5 16.00 GBA6 16.00 GBA7 16.00 GBA8 16.00 GBA9 16.00 GBA10 16.00 GBA11 16.00 GBA12 16.00 GBB1 32.00 GBB2 32.00 GBB3 32.00 GBB4 32.00 GBB5 16.00 GBB6 16.00 GBB7 16.00 GBB8 16.00 GBB9 16.00 GBB10 16.00 GBB11 16.00 GBB12 16.00 GBIs the 16GB module in A1 a valid configuration ? Would the module in be causing system issues ?
+
+
+
+					
+						
+					
+					.","Sp200,
+ 
+That would not be a supported configuration since the other dimms are larger. As seen on page 81 here, the larger dimms must be populated first.You can also find the other memory population guidelines there as well.
+ 
+Let me know if this helps.
+ 
+
+DELL-Chris HSocial Media and Communities ProfessionalDell Technologies | Enterprise Support Services#IWork4DellDid I answer your query? Please click on ‘Accept as Solution’. ‘Kudo’ the posts you like!
+
+
+
+"
+"I've just updated the iDRAC in a PowerEdge R340 from 5.10.10.00 to the newly released 6.00.00.00All appears to be working ok, apart from the fans are now running at ~11,000 rpm rather than the ~3,800 rpm they were on the previous version.I've tried rolling back to the older version and the fans went back to normal.Upgrade again to v6 and they're screaming again.Anybody else seeing the same behaviour?Cheers,Rob
+
+
+
+					
+						
+					
+					.","For anyone following this thread, iDRAC9 firmware v6.00.02.00 made its way onto the download pages today, which, from my initial testing, seems to fix the fan issue on an R340. Cheers,Rob
+
+
+"
+"Hi there,Which are the other vendors' SAN switches compatible with this card? Is there any list?   (in particular with HPE switches) Thanks!Andrea
+
+
+
+					
+						
+					
+					.","The HBA355e is a HBA with 4 external SAS Ports in a non raid fashion. Normaly thats used for a point to point connection and not like a fabric.  A decade ago there was a SAS Switch made by LSI but that was never adopted by the big Vendors.
+This is not a FC HBA or a Network card so you cant use Brocade like FC SAN switches or similar.
+Regards,Joerg
+
+
+"
+"I have a PowerEdge c6100 arriving soon.   It is a bottom end model with the Xeon 5520 processors. For the majority of what this server will be used for, that is more than enough. But for one blade the application in it will vastly benefit from a higher frequency rather than multi-cores. Doing a quick check I found that the 5520 is a socket 1366.  But when I check spec sheets for the server it mentions only the 5500 and 5600 series processors.  A little more digging shows that those 2 series were just factory options.   To my question: Is this server ~ONLY~ compatible with the 55/56 series processors or is it compatible with anything that fits the socket so to say?  Before I spend another grand on 2 CPUs with 3.4 Ghz I would like to know if they would work!
+
+~Thanks ahead of time, Tony
+
+
+
+					
+						
+					
+					.","Thanks for your question. It looks like the fastest option available is the X5672, a 3.2ghz option.  Further research shows the board will accept up to 95w processors only.  The 3.4ghz option you are referring to is a 139w CPU.   
+Regards,
+
+Geoff PDell | Social Outreach Services - EnterpriseGet Support on Twitter @DellCaresProDownload the Dell Quick Resource Locator app today to access PowerEdge support content on your mobile device!(iOS, Android, Windows)
+
+
+
+"
+"Hi there,I've got a PowerEdge R320, great deal, £70 for an E5-2450, 48gb ram, dedicated enterprise iDRAC, both 350w PSU's and 3TB HDDs with a raid controller. However, I'm having lots of trouble when I'm running into updating the iDRAC firmware. I'm a bit of a neat freak so I'd really love everything to be as up-to-date as possible and I've gone through countless steps trying to fix this. Right now, It's on version 2.21.21. I haven't had any trouble updating the BIOS firmware but I have now rolled it back to its original 2.4.2 from having updated it to 2.9.0 . I have installed Windows Server 2012 R2 on it to try and get it to install from there but still no hope. I don't actually get that much of an error message when i do it, but its usually RED004. I've had a couple times where I've tried and the website comes up with iDRAC 8 instead of  iDRAC7. I have also tried hard resetting it with the command:racadm racreset hard -f Although this works to get iDRAC back into it's regular state after the firmware update going weird, trying again just gives similar errors and I have tried updating via the web page. This has been trying to upgrade to 2.30.30 and 2.65.65 I believe. Any help is much appreciated!
+
+
+
+					
+						
+					
+					.","Hi Joey,Today is the day it happened!I successfully updated the iDRAC firmware to 2.65.65.65 from 2.21.21.21.Firstly, I'd like to say thank you for your help in troubleshooting the situation and sticking with me throughout this nightmare.After having tried every method under the sun, iDRAC would still not update. Luckily, I found a great guy on YouTube (shoutout to him) going over his steps to fix a bricked iDRAC. Luckily, in my situation my iDRAC wasn't necessarily 'bricked'; iDRAC had no problem working even after the hundred failed firmware update attempts that I had tried. Although my situation wasn't exactly like his, the methods used to try and treat a bricked iDRAC managed to treat mine as well.So these are the steps I took to fix this problem (For an R320 or similar) Just to be said, I am not a qualified electrician. These are purely the steps I took to overcome this problem:You will need:USB UART device, one capable of 3.3v. (Cheap from Amazon)Soldering ironSD Card in the FAT format loaded with the firmware.d7 file in the root folder.iDRAC Enterprise cardSpare PC or Laptop with PuTTY installed.Make sure you export your iDRAC license. This can be done by the web GUI. If necessary also export you iDRAC settings as this will completely wipe all iDRAC configuration.On the motherboard there will be a BMC_UART port right next to the rear I/O of the MB. The connection pinout is: R320 (or similar) BMC_UARTFunctionPin 1 (Square Pad)Vdd (3.3v)Pin 2TxPin 3RxPin 4GNDSolder 4 jumper wires onto the board and connect them to the USB UART dongle as followed. Make sure the server is off!Connect to the serial port in PuTTY with your COM interface (if you're unsure what interface to use, check device manager) with a baudrate of 115200 using TELNET. Now you can boot the server. If those steps were successful, you should now see the uboot process of the server. If it has booted successfully, you should be greeted with a linux shell but in this situation we wont be needing that. Although it's a good idea to test your UART wiring so you are able to send text to the console.This next step can be a bit tricky. You now need a paperclip or anything else you can use to short a switch on the MB. The switch is located near the large silver heatsink, named SW2. To reboot the system, short switch 1. Now this is the tricky part - quickly switch over and short switch 2 while spamming any key in the console. If you are lucky, you will see the uboot process has been interrupted and you now have an iDRAC prompt. It will look something like: iDRAC 7/8=>With the FAT formatted SD card loaded with the fimware image, run: util recover -emmc -from sd -f firmimg.d7 -noreset -clean  If you are successful, it should have erased the EMMC and installed the new firmware. You can now unplug the server when it's safe to do so and drain the power by holding the power button down for 30 seconds. Unfortunately if you were unsuccessful, you may have a bad EMMC chip, I have read that these can go bad from perhaps too many write cycles.When booting up, you may or may not have the lifecycle controller telling you an update is required or spit out a firmware error. This is ok, just reboot the server a couple times and it should return to normal. Boot into the lifecycle controller and click 'about' in the top right corner. Voila! The iDRAC firmware should now be up-to-date! To restore the iDRAC license, go to the Platform Restore section and import the license. You will need a USB stick with your exported license on it. You can now unsolder the BMC_UART connection if you wish and uninstall the SD Card from the iDRAC Card.Here is a labelled photo of the MB to guide you: Here are the forums that helped me:https://www.youtube.com/watch?v=kvSDNAi39YY&ab_channel=JunctionRunner https://www.reddit.com/r/homelab/comments/bsou3n/dell_r520_idrac_7_swc0700_and_idrac8_prompt/ https://www.reddit.com/r/homelab/comments/a49b4y/r720_idrac_help/ https://winraid.level1techs.com/t/problem-dell-r720xd-idrac-bios-recovery/32658/95 Many Thanks!
+
+
+"
+"Hi,- T620 would get stuck on ""Configuring memory"" while booting. Never made it past that.- I then read about pressing ESC repeatedly while that message comes up and it actually worked.- Now my T620 would still show ""Configuring memory"" but after a minute it would say ""Configuring memory...Done"" and continue to boot.- It would now show a Memory Training Failure (RAM 1 and 3) while booting, but still boot. Only difference was that now I only had 48GB instead of 64GB, which made sense since my RAM is 8 x 8. - I was able to use the T620 just fine.- Installed a PCIe x 1 card into a PCIe x 16 (or is it x8?) slot and of course it would not work. The T620 would ""start"" but I would not see anything on the screen. I tried that twice and then took the PCIe x 1 card out again.- I switch RAM 1 with 2 and vice versa to see if the RAM is broken or the Motherboard.- Press the power button. Nothing. Took the power cable out, pressed for 10 seconds the power button, waited a minute, still nothing. The T620 makes no sound at all. ZERO. - Switched the RAM back the way it was, still nothing.- Checked the CMOS battery and it says 3 Volts, that it can't be that. I guess.At this point I have no idea why the T620 suddenly would not work anymore??? I heard no popping or smelled anything when plugging in the PCIe x 1 card because at the beginning I would that is what ""killed"" it. But I read online that people actually use PCIe x1 in x8 or x16 slots. So, no issue with that. I think.I only have one Power supply and its green light is on. What the heck would make the T620 stop working like that???Thanks.
+
+
+
+					
+						
+					
+					.","Navissa,
+ 
+ 
+I would start out with first draining the flea power by disconnecting AC power cables and then press and hold the power button for about 15 seconds, once you do that open the cover and take the server to its minimum to post configuration, that is removing everything internally and externallly from the server, including mouse and keyboard, except the following :
+
+System Board
+CPU1 with heat sink (minimum for troubleshooting)
+Single DIMM configuration with DIMM in socket A1 (preferably not one previously erroring)
+Control Panel with cable (to power system on)
+PSU (and for redundant PSU also the PDB/PIB)
+
+ 
+After that power up and see if the no video issue is resolved. If so then add each of the removed devices back individually until the issue reappears, or all the devices are reinstalled without issue, this should help identify if there is a device causing the issue,
+Now if the system doesn't start under the minimum to post configuration, then it is one of the devices I listed above causing the issue.
+ 
+Let me know what you see.
+ 
+ 
+ 
+
+DELL-Chris HSocial Media and Communities ProfessionalDell Technologies | Enterprise Support Services#IWork4DellDid I answer your query? Please click on ‘Accept as Solution’. ‘Kudo’ the posts you like!
+
+
+
+"
+"Hello!I'm trying to find a way to mount 2 of the T320 servers in a rack. According to this document from Dell, my servers are compatible with sliding rails, however, I can't find a part number for those rails. By googling, I was able to find Dell Tower to Rack conversion kit (PN: 573MY), but it is compatible with T440. But I also would prefer rails, but I guess will take anything that will be available.  I would appreciate any advice on how to mount those systems. Update:On eBay I found this, Rail Kit 5N9DY, but I can't confirm if that part will work with my T320s
+
+
+
+					
+						
+					
+					.","Hello,
+I can confirm that 5N9DY are compatible with Poweredge T320.
+You can also contact presales team from dell to see what can we sell you.
+Thanks
+
+Marco B.Social Media and Communities Professional Dell Technologies | Enterprise Support Services#IWork4DellDid I answer your query? Please click on ‘Accept as Solution’. ‘Kudo’ the posts you like!
+
+
+
+"
+"Hi,
+I've got this server and i have not updated anything on this server a long time. my OS is windows 2003 r2 32bit server. I am planning to install windows 2012 r2. what should i do first? do i need to update the hardware such bios, firmware and etc.? can you please show me the steps on how to update my PE server 2950 please? thanks in advance.
+
+
+
+					
+						
+					
+					.","The fact that this is your domain controller is irrelevant (assuming you maintain good backups and plan your maintenance downtime appropriately).
+
+
+
+"
+"My VRTX Chassis won't load the CMC right from startup.After about 5 -10 minutes, it displays ""CMC not responding"" on the little LCD screen I'm out of warrant with this server and thus can't get any support from dell. What can I do to resolve it.Thank you for your suggestions.
+
+
+
+					
+						
+					
+					.","Hello @kabatha,
+Thi is probably a CMC hardware failure that eventually will need a hardware replacement. However, if you have 2 CMCs you can switch them to check it the VRTx start booting. That might discard if it is a hardware error.
+Regards.
+
+Diego LópezSocial Media and Communities Professional Dell Technologies | Enterprise Support Services #Iwork4Dell Did I answer your query? Please click on ‘Accept as Solution’‘Kudo’ the posts you like!
+
+
+
+"
+"Our security tool alerted about week KEX algorithims enabled on the FN410S I/O module one of our non-prod servers has.I've been trying to figure out how to disable it but can't seem to run the command. I entered conf mode, but my only options under ip ssh server are enable and version. show ip ssh shows that the diffie hellman methods are enabled. I have been referencing CLI documentation https://www.dell.com/support/manuals/en-ae/poweredge-fx2/fn-iom-9.10.0.0-cli-pub/ip-ssh-server?guid=... but can't seem to get the KEX portion to run. Does anybody have example syntax for modifying the KEX value?
+
+
+
+					
+						
+					
+					.","Hi @rs7386,
+ 
+To disable KEX? - I think a command syntax of '#no ip ssh server kex' should disable KEX. 
+ 
+Also, could you check if you're running on firmware 9.10? If yes, please update to 9.14.1.8. 
+
+DELL-Joey CSocial Media and Communities ProfessionalDell Technologies | Enterprise Support Services#IWork4DellDid I answer your query? Please click on ‘Accept as Solution’. ‘Kudo’ the posts you like!
+
+
+
+"
+"Looking for the Part Number for a TPM 2.0 Module for a R730. Also do All R730 have a TPM slot even if they didn't order one from the factory?
+
+
+
+					
+						
+					
+					.","Hello, thanks for choosing Dell. This old post may help:
+https://dell.to/45tJgHm
+
+DELL-Young ESocial Media and Communities ProfessionalDell Technologies | Enterprise Support Services#IWork4DellDid I answer your query? Please click on ‘Accept as Solution’. ‘Kudo’ the posts you like!
+
+
+
+"
+"Hello,what might be the reason?If I do shut down the system regardless in the WebUI or with the power button:the shutdown will be done, NIC LEDs go off briefly, be turned on after 1 second and the T20 will boot again.The only time I managed it to stay shut down was to disconnect the power cable and re-attach it. (UEFI after power loss = stay off)TrueNAS-SCALE-22.12.1 installed on SATA SSDPower and LAN cable connected to T20, nothing elseSATA HDD for storageUEFI Version A20Disable Deep SleepEnable Wake On LAN
+
+
+
+					
+						
+					
+					.","Hello @DELL-Joey C and @DELL-Chris H I have found the solution about Wake On LAN (WOL) for TrueNAS Scale (Linux based):German:https://www.computerbase.de/forum/threads/proxmox-rechner-startet-permanent-nach-dem-herunterfahren....GRUB_CMDLINE_LINUX_DEFAULT=""xhci_hcd.quirks=270336""https://www.truenas.com/community/threads/kernel-boot-parameter-how-to-add-to-tn-scale.110109/It works, now the Dell T20 is standing down, no auto start.
+
+
+"
+"After a long power outage, the accountant decided to turn on the server on her own.After pressing the button ""i"" and holding it for a little longer, she reset the settings iDRAC along with the license.How can I restore it now? The server was purchased in 2014. Service Tag <Service Tag was removed>.
+ 
+
+
+
+					
+						
+					
+					.","Hi, Sergei 66,
+ 
+iDRAC license was sent to you.
+ 
+Please ask me if you have any questions, 
+ 
+Thank you,
+Maria Januszka
+#IWork4Dell
+Dell | Social Outreach Services - Enterprise
+
+Maria JSocial Media and Communities Professional Dell Technologies | Enterprise Support Services #Iwork4Dell Did I answer your query? Please click on ‘Accept as Solution’‘Kudo’ the posts you like!
+
+
+
+"
+"Hi all,Is the Dell Marvell FastLinQ 41132 Dual Port 10GbE OCP 3.0 SFP+ or RJ45?  I'm seeing conflicting statements from sites I usually can rely on. : (Thank you!-S
+
+
+
+					
+						
+					
+					.","Hi @S3rverSavvs,
+ 
+Usually the card naming would inform you of the interface it has. For example: 
+ 
+SFP: https://dell.to/3MUylzo
+RJ45/BASE-T: https://dell.to/3MQpLS6
+ 
+If you do have the DPN# for the card, I'll try to check the description and let you know what interface it would be. 
+
+DELL-Joey CSocial Media and Communities ProfessionalDell Technologies | Enterprise Support Services#IWork4DellDid I answer your query? Please click on ‘Accept as Solution’. ‘Kudo’ the posts you like!
+
+
+
+"
+"Dear Experts, We plan to buy 3 sets of R750 with ""Dual, Hot-Plug, Power Supply (PS) Fault Tolerant Redundant (1+1), 1400W, Mixed Mode"".I wonder what is the power consumption of that one. If 1 PS runs and 1 PS is in sleep mode, I think it is around 1.4 kW per set, is that right?We need to calculate their power consumption in order to buy proper UPS. Thanks!   
+
+
+
+					
+						
+					
+					.","Use Dell's Enterprise Infrastructure Planning Tool (EIPT)That will tell you all the power/heat/air flow information you need to size.
+
+
+"
+"Hello, So we have had an issue with our T30's since BIOS version 1.5.0 and today 1.6.0 was released and we still see the issue. It will contact wsus but it will not report updates.WSUS requires the chassis family name to be able to report its updates. On both versions it is just missing after installation. It was fine prior to this. We have tried to reach out to support and get no where with them. Does anyone have any suggestions of how we could reach to Dell to get them to include the Chassis Family? System InformationManufacturer: Dell Inc.Product Name: PowerEdge T30Version: Not SpecifiedSerial Number: XXXXXXUUID: 4C4C4544-0059-5710-8058-C8C04F313732Wake-up Type: Power SwitchSKU Number: 07C5Family: .. Thank you
+
+
+
+					
+						
+					
+					.","The latest 1.9.0 Bios still has the issue.  I started to investigate how to edit the DMI/SMBIOS table.  I found a tool from American Megatrends (Bios on T30 is American Megatrends, or AMI for short), it is called DMIEDIT.  When I open DMIEdit I can see the family name is set to HEX 90 1C.  Assuming these are hex for ascii characters, this means 90 does not exist and 1C is for a file separator, probably the reason for the issue.  Running DMIEDIT in the GUI you can edit the field, deleting the 2 characters and replacing it with a space (HEX 20) and pressing ""update all"" fixes the issue.  This only works until you reboot.  I created a startup task in windows to run the command line version on DMIEDIT to edit the field on every boot.  Something like DMIEDIT.exe /SF "" "" works.Kind of a hack but Dell has not fixed the issue in some time, not sure they ever will.FixBroke 
+
+
+"
+"Hello,We were asked by DELL supporter to update iDRAC again for a hardware support, from 6.02.00.00 to 6.10.00.00. After updating, the secure web access to iDRAC failed with error:Bad RequestYour browser sent a request that this server could not understand.Additionally, a 400 Bad Request error was encountered while trying to use an ErrorDocument to handle the request.After doing some tests, I have the following conclusions/workarounds:1. the secure web access failed when using the FQDN of iDRAC interface2. using the IP or short hostname works with the secure web access3. setting iDRAC.WebServer.ManualDNSEntry to have the FQDN included won't solve the issue4. disabling idrac.webserver.HostHeaderCheck aslo works, but could not open virtual console viewer I tried to use racadm command 'sslresetcfg' to regenerate the certificate, but only short hostname used as Common Name (CN) and also only the short hostname listed in the DNS alternative name. By the way, we have DNS BMC/RAC Name and DNS Domain name correctly configured.It looks like to me a new bug in version 6.10.00.00. Though there are not issues with the IP and short hostname access, it is still annoying since we have FQDN defined and linked everywhere. Thanks,Di
+
+
+
+					
+						
+					
+					.","Indeed, this seems fixed in later version. I just updated one of our nodes to version  6.10.80.00, the issue described in my first post has gone. When I was testing iDRAC version 6.10.30.00, the issue was sill there.
+
+
+"
+"Greetings, I have the following PowerEdge Dell Server T620 and it has ESXI 7 installed on it. Is it possible by any chance to configure an APC UPS with it? Through iDrac or maybe through the host ESXI? The APC UPS is https://www.amazon.ca/gp/product/B0779QFRRT   
+
+
+
+					
+						
+					
+					.","Hello AnsRed,
+ 
+The UPS at the link doesn't look like a Dell UPS.  You may want to contact APC.
+ 
+Take a look at this article on VMware site and see if it helps:
+ 
+Installing the APC Powerchute Network Shutdown software on VMware ESXi hosts (1007036)
+https://kb.vmware.com/s/article/1007036
+
+Dell -Charles RSocial Media and Communities ProfessionalDell Technologies | Enterprise Support Services#IWork4DellDid I answer your query? Please click on ‘Accept as Solution’. ‘Kudo’ the posts you like!
+
+
+
+"
+"
+					
+					.","Hello moeali41,
+ 
+Notice both of those drives have  EMC P/N: #########
+They are not for PowerEdge Server.
+ 
+Drives you are asking about:
+ 
+Compatible Platform  for your first drive:
+ 
+DELL EMC UNITY XT 880F
+DELL EMC UNITY XT 480
+DELL EMC UNITY XT 680
+DELL EMC UNITY XT 680F
+DELL EMC UNITY XT 480F
+DELL EMC UNITY XT 880
+DELL EMC UNITY XT 380
+DELL EMC UNITY XT 380F
+ 
+ 
+Compatible Platform  for your second drive:
+ 
+DELL EMC UNITY 550F
+DELL EMC UNITY 350F
+DELL EMC UNITY 650F
+VNX2 VNX8000
+DELL EMC UNITY 400F
+DELL EMC UNITY 600
+DELL EMC UNITY 500
+DELL EMC UNITY 300
+VNX2 VNX5800
+VNX2 VNX7600
+VNX2 VNX5200
+VNX2 VNX5600
+DELL EMC UNITY 500F
+VNX2 VNX5400
+DELL EMC UNITY 600F
+DELL EMC UNITY 400
+DELL EMC UNITY 450F
+DELL EMC UNITY 300F
+
+Dell -Charles RSocial Media and Communities ProfessionalDell Technologies | Enterprise Support Services#IWork4DellDid I answer your query? Please click on ‘Accept as Solution’. ‘Kudo’ the posts you like!
+
+
+
+"
+"Hardware: Dell PowerEdge R720Compatibility: VMWare 6.5 U3Running: VMWare 6.7 U3Trying to upgrade to 7.0 U3 using Dell image with the following command:esxcli software profile update -d /vmfs/volumes/RAID5/ISO/ESXi/VMware-VMvisor-Installer-7.0.0.update03-20842708.x86_64-Dell_Customized-A10.zip -p DEL-ESXi-703_20842708-A10 --no-hardware-warning[DependencyError]VIB Dell_bootbank_dcism_3.5.1.ESXi6-1949 requires esx-version << 6.8.0, but the requirement cannot be satisfied within the ImageProfile.If I run the same command without ""--no-hardware-warning"", I get the following message:[HardwareError]Hardware precheck of profile DEL-ESXi-703_20842708-A10 failed with warnings: <CPU_SUPPORT WARNING: The CPU in this host may not be supported in future ESXi releases. Please plan accordingly.> I have also tried Dell's 7.0 (A03) & 7.0 Update01 (A05), even VMWare's 7.0U3g, 7.0U3j and 7.0U3k with no success.I guess I am not fully understanding the message if it's asking for VMware 6.8.0 or dcism_3.5.1??? When I checked the installed packages in my VMWare ESXi, I can see the following:Package Name: dcismVersion: 3.5.1 ESXi6-1949Vendor: DellInstalled on: Sunday, October 09, 2022, 16:13:31 -0400I am assuming I can just remove this module. I know my specific hardware is not supported for VMWare 7.0, is there any workaround for this? I am assuming I can uninstall this as I don't use it any way. Any suggestions will be greatly appreciated.
+
+
+
+					
+						
+					
+					.","Thats the iDRAC Service Module.... just remove it for the upgrade. You can install it later again. Same is true for iDRAC Tools and oMSA.
+We run vSphere 7.0u3 on our 12Gen poweredge Servers.
+Yes.... on   paper its not supported but run great.
+Regards,Jörg
+
+
+"
+"Hello,I recently replaced a failing RAID 5 HDD(HGST) in a server from a supplier who gave me a Seagate ST10000NM018B HDD which is equivalent in specifications. The drive came online and the RAID rebuilt without a problem, but in the OSMA software it shows a warning because some of the information is missing(see attached pic) and the logs said something to the effect of ""HDD detected from unsupported vendor"". The drive status shows it being online, and these servers are close to end of life anyway and will be changed soon, is this something that I could safety overlook for now?
+
+
+
+					
+						
+					
+					.","Hi @Harry44,
+ 
+If the drive is not a Dell certified drive, you may encounter such incident. This is because Lifecycle Controller/iDRAC is trying to communicate with the drive, but unable to retrieve Dell firmware data, the information displayed will be unknown/not available. The drive works, only informational data from the drive is not displayed. Since you mentioned that the servers are going to be replaced, I would say you can safely overlook for now.
+
+DELL-Joey CSocial Media and Communities ProfessionalDell Technologies | Enterprise Support Services#IWork4DellDid I answer your query? Please click on ‘Accept as Solution’. ‘Kudo’ the posts you like!
+
+
+
+"
+"Hello, I am trying to check the PSU compatiblity list for PowerEdge R720.  I search the Dell website but I couldn´t find it, do you have any link to check it? List?
+
+
+
+					
+						
+					
+					.","There are going to be two different wattages for these systems. You are going to have a lower wattage 750W with part numbers of 5NF18 and 6W2PW which are interchangeable. The higher wattage PSU will be 1100W with part numbers of YT39Y, GYH9V, 38GYJ which are also interchangeable with eachother.You can not mix wattages so you either need 2 750W PSUs or 2 1100W PSUs.13th generation Dell PSUs will technically fit but won't work so make sure you are using 12th generation specific PSUs in this system.
+
+
+"
+"My EMC DELL P570f Server can't detect any network adapter when iam tiring to get list of nic there is no show any thing please any person help me how to resolve it. it's urgent. IAM ring by this command excli network list     
+
+
+
+					
+						
+					
+					.","Hi, I can check if you can post the part number if the card you are using is compatible with the server. 
+
+Make sure the adapter is securely inserted in the server’s PCIe slot and the cables are plugged in correctly.
+In the BIOS setup, check the network adapter and enable or not.
+Download and install the latest driver for the adapter.
+Open Device Manager on the server and check if the adapter is listed. If not, scan for hardware changes. If the adapter is still not detected, it may be defective and need to be replaced.
+Check the network cable connection between the adapter and the switch. A faulty or loose cable can cause network problems.""
+
+Also I found this topic from vmware please take a look. ESXi 7 fails - ""No Network adapters detected"" - VMware Technology Network VMTN
+
+Thanks,Erman ÖzkurtSocial Media and Communities Professional Dell Technologies | Enterprise Support Services #IWork4DellDid I answer your query? Please click on ‘Accept as Solution’. ‘Kudo’ the posts you like!
+
+
+
+"
+"I have tried digging into every Dell documentation repository I can find on the R730 and nowhere can I find a list of compatible PSU part numbers. Can someone please help me by just posting a list of every PSU P/N that the R730 is compatible with? Thanks.
+
+
+
+					
+						
+					
+					.","Below are part number of various PSU supported on R730 Part #Part DescriptionY26KXPWR SPLY,1100,RDNT,13G,DELTA,3Y3H8JPWR SPLY,1100,RDNT,13,LITEON,25RHVVPWR SPLY,750W,RDNT,13G,DELTA,3KNHJVPWR SPLY,750W,RDNT,T,220,13,DEYGF8TPWR SPLY,495W,RDNT,13G,ART,V55G4WKPWR SPLY,1100W,RDNT,DC,ART,V457TFTPWR SPLY,750W,RDNT,T,13G,DEL,28H33MPWR SPLY,750,RDNT,13G,LITEON,3G6W6KPWR SPLY,750W,RDNT,13G,DELTAVKDD2PWR SPLY,495W,RDNT,13G,ART,V4W12Y2PWR SPLY,1100W,RDNT,13G,DELTA2FR04PWR SPLY,495W,RDNT,13G,DELTAPR21CPWR SPLY,1100,RDNT,13G,DELTA,2CMPGMPWR SPLY,1100,RDNT,13,LITEON,4GRTNKPWR SPLY,495W,RDNT,13G,DELTA,20XW8WPWR SPLY,750W,RDNT,13G,ART,V2PJMDNPWR SPLY,750W,RDNT,13G,ART,V59K04TPWR SPLY,750W,RDNT,13G,ART,V39TMRFPWR SPLY,1100,RDNT,13,LITEON,3TPJ2XPWR SPLY,750W,RDNT,13G,EMERSONV1YJ6PWR SPLY,750W,RDNT,13G,DELTA,2TH1CTPWR SPLY,495W,RDNT,13G,ART,V3Y9VFCPWR SPLY,750W,RDNT,13G,ART,V4W8R3CPWR SPLY,750,RDNT,13,LITEON,4T94HPPWR SPLY,1100W,MMHVDC,RDNT,DEL
+
+Thanks,DELL-Shine K#IWork4Dell
+
+
+
+"
+"Hi everyoneI'm configuring a PowerEdge R650 for selling and when I'm choosing the Additional Network Cards theres the ""Broadcom 5719 Quad Port 1GbE BASE-T Adapter, PCIe Full Height, V2, FIRMWARE RESTRICTIONS APPLY"". My question here is, what are those ""Firmware Restrictions"" on these Network card?Thanks in advance,Greetings.
+
+
+
+					
+						
+					
+					.","Hello SergioBr98
+ 
+It could mean that you can't downgrade firmware.
+The Release notes show:
+Notables
+==========
+- The drivers and firmware provided on this SW kit are tested in conjunction with each other.
+- Mixing and matching drivers or firmware with a previous release is not supported.
+ 
+I'm not seeing anything else from the Technical Support side.
+ 
+You may contact Sales since it is a sales tool to see if they have an explanation.
+ 
+
+Dell -Charles RSocial Media and Communities ProfessionalDell Technologies | Enterprise Support Services#IWork4DellDid I answer your query? Please click on ‘Accept as Solution’. ‘Kudo’ the posts you like!
+
+
+
+"
+"I am going in circles on this one. This is an older PowerEdge T320 with a PERC H310 control and iDRAC v7 controller. It has been in production and now we've taken it offline. We were going to set it up to do some testing but after deleting the RAID configs on both drives, we can't seem to figure out why we are getting this issue.In the PERC controller Adapter BIOS, I started by deleting both VD'sNext, I created new VD's and did a quick initialization on both.After I did that, when I look at the screen, it shows 0GB for total free capacity. I continue on and ESC out of that screen, reboot the serverI have attached pictures
+
+
+
+					
+						
+					
+					.","Hello jdb789,
+ 
+Try these steps:
+ 
+Give the system a flea power drain.
+drain flea power (shut down, disconnect power cables and Network cables, hold in power button 20 seconds with cords removed).  After flea power drain, system has to set for 3 minutes for DRAC to reset without any power plugged in, then plug in NIC and power but wait 2 minutes before power on to give DRAC time to initialize.
+ 
+ 
+Then boot into the LifeCycle controller <F10> and let it sit at the main page. The system either needs to be booted into the LifeCycle controller or an OS so that a driver will load and the DRAC will see the drives.
+ 
+Check the DRAC Storage to see the drives.
+ 
+If it does not show then give the DRAC a reboot and check again.
+ 
+If it still does not show or as maintenance after they show, I'd recommend to check that the H310, BIOS and iDRAC are on latest firmware.
+ 
+
+Dell -Charles RSocial Media and Communities ProfessionalDell Technologies | Enterprise Support Services#IWork4DellDid I answer your query? Please click on ‘Accept as Solution’. ‘Kudo’ the posts you like!
+
+
+
+"
+"Hi all,I bought a PowerEdge T150 server, I'm new to Dell.I also took an extra 7.2K disk to be able to create a raid 1, at least I have a mirror.Can you tell me what are the steps to follow, after mounting the disk in the tower, to configure the raid?Thank you very muchA.
+
+
+
+					
+						
+					
+					.","Hi @Andy_79,
+ 
+You can refer to the T150 user guide to enable RAID mode: https://dell.to/3Vwir0J
+ 
+Once you enable RAID mode, you can access PERC S150 to configure RAID: https://dell.to/44vjUs8
+ 
+Also, please note we are unable to assist directly in making new configurations, but we do have professional services which can help you to deploy the configuration you need. You may consider contacting Dell Sales department for a professional deployment if needed.
+
+DELL-Joey CSocial Media and Communities ProfessionalDell Technologies | Enterprise Support Services#IWork4DellDid I answer your query? Please click on ‘Accept as Solution’. ‘Kudo’ the posts you like!
+
+
+
+"
+"Hey I was given a PowerEdge T630 server. I want to use it as a 2nd Windows 10 system to run my OBS streaming. I know overkill, but its what I was given. I have zero understanding of how a server should behave. I cant get a video signal out of it. I only have dealt with personal desktops which I'm comfortable with. I seek just how to install Windows 10 on this device and I should be able to figure the rest out. I see the back IO panel has two PCI slot bays for cpu1/2 and the center of the IO panel is labeled ""iDrac"" The VGA port located in ""iDrac"" does not show video, nor does the VGA at the front IO panel near the power button. . Let me know what I can do to help anyone make sense of this and what I may need to read to help myself. Thank you!
+
+
+
+					
+						
+					
+					.","It was the cable... just returned from Walmart with a standard VGA cable and its giving me a display now. Go figure this spring I cleaned many old wires from my bins including all my vgas. heh. Thanks for the information however!
+
+
+"
+"Hi, we have a Dell Poweredge T430 with 2x Intel(R) Xeon(R) CPU E5-2630 v4 and would like to replace them to run virtual clients with Windows 11.What type of CPU would go that support Windows 11 and what is the part number?Best regards
+
+
+
+					
+						
+					
+					.","Hello wewa,
+ 
+I'll note that we don't have support for Windows 11 on the T430
+Your PowerEdge T430 supports these operating systems:
+https://dell.to/3p4V2XP
+ 
+The CPUs you have, 2x Intel(R) Xeon(R) CPU E5-2630 v4,  will support virtualization.
+https://dell.to/3p7iL9O
+ 
+We have these processors validated for the T430>
+
+
+
+
+
+Part Number
+
+
+Part Description
+
+
+Functional Description
+
+
+
+
+2C78T
+
+
+PRC,E52630V4,2.2,25M,BDW,R0
+
+
+Intel, 2.2GHz, 25MB, FSB 8000MHz, 85W, Xeon E5-2630V4, Broadwell, Server, Bare Processor, R0
+
+
+
+
+3JP2W
+
+
+PRC,E52640V4,2.4,25M,BDW,R0
+
+
+Intel, 2.4GHz, 25MB, FSB 8000MHz, 90W, Xeon E5-2640V4, Broadwell, Server, Bare Processor, R0
+
+
+
+
+41XVP
+
+
+PRC,E52660V4,2.0,35M,BDW,M0
+
+
+Intel, 2.0GHz, 35MB, FSB 9600MHz, 105W, Xeon E5-2660V4, Broadwell, Server, Bare Processor, M0
+
+
+
+
+5W50J
+
+
+PRC,E52650LV4,1.7,35M,BDW,M0
+
+
+Intel, 1.7GHz, 35MB, FSB 9600MHz, 65W, Xeon E5-2650LV4, Broadwell, Server, Bare Processor, M0
+
+
+
+
+6T3W1
+
+
+PRC,E52623V3,3.0,10M,HSL,R2
+
+
+Intel, 3.0GHz, 10MB, FSB 9600MHz, 105W, Xeon E5-2623V3, Haswell, Server, Bare Processor, R2
+
+
+
+
+8HV3M
+
+
+PRC,E52630LV4,1.8,25M,BDW,R0
+
+
+Intel, 1.8GHz, 25MB, FSB 8000MHz, 55W, Xeon E5-2630LV4, Broadwell, Server, Bare Processor, R0
+
+
+
+
+97J7F
+
+
+PRC,E52650LV3,1.8,30M,HSL,M1
+
+
+Intel, 1.8GHz, 30MB, FSB 9600MHz, 60W, Xeon E5-2650LV3, Haswell, Server, Bare Processor, M1
+
+
+
+
+9XVVW
+
+
+PRC,E52620V4,2.1,20M,BDW,R0
+
+
+Intel, 2.1GHz, 20MB, FSB 8000MHz, 85W, Xeon E5-2620V4, Broadwell, Server, Bare Processor, R0
+
+
+
+
+C1J8J
+
+
+PRC,E52603V3,1.6,15M,HSL,R2
+
+
+Intel, 1.6GHz, 15MB, FSB 6400MHz, 85W, Xeon E5-2603V3, Haswell, Server, Bare Processor, R2
+
+
+
+
+CCKRV
+
+
+PRC,E52660V3,2.6,25M,HSL,M1
+
+
+Intel, 2.6GHz, 25MB, FSB 9600MHz, 105W, Xeon E5-2660V3, Haswell, Server, Bare Processor, M1
+
+
+
+
+CH53K
+
+
+PRC,E52609V4,1.7,20M,BDW,R0
+
+
+Intel, 1.7GHz, 20MB, FSB 6400MHz, 85W, Xeon E5-2609V4, Broadwell, Server, Bare Processor, R0
+
+
+
+
+CKRX1
+
+
+PRC,E52609V3,1.9,15M,HSL,M1
+
+
+Intel, 1.9GHZ, 15MB, FSB 6400MHz, 85W, Xeon E5-2609V3, Haswell, Server, Bare Processor, M1
+
+
+
+
+GK3MY
+
+
+PRC,E52620V3,2.4,15M,HSL,R2
+
+
+Intel, 2.4GHz, 15MB, FSB 8000MHz, 85W, Xeon E5-2620V3, Haswell, Server, Bare Processor, R2
+
+
+
+
+NGM8T
+
+
+PRC,E52650V4,2.2,30M,BDW,M0
+
+
+Intel, 2.2GHz, 30MB, FSB 9600MHz, 105W, Xeon E5-2650V4, Broadwell, Server, Bare Processor, M0
+
+
+
+
+NTT91
+
+
+PRC,E52640V3,2.6,20M,HSL,R2
+
+
+Intel, 2.6GHz, 20MB, FSB 8000MHz, 90W, Xeon E5-2640V3, Haswell, Server, Bare Processor, R2
+
+
+
+
+P63R9
+
+
+PRC,E52603V4,1.7,15M,BDW,R0
+
+
+Intel, 1.7GHz, 15MB, FSB 6400MHz, 85W, Xeon E5-2603V4, Broadwell, Server, Bare Processor, R0
+
+
+
+
+T89M9
+
+
+PRC,E52650V3,2.3,25M,HSL,M1
+
+
+Intel, 2.3GHz, 25MB, FSB 9600MHz, 105W, Xeon E5-2650V3, Haswell, Server, Bare Processor, M1
+
+
+
+
+VHW19
+
+
+PRC,E52630V3,2.4,20M,HSL,R2
+
+
+Intel, 2.4GHz, 20MB, FSB 8000MHz, 85W, Xeon E5-2630V3, Haswell, Server, Bare Processor, R2
+
+
+
+
+YVTN6
+
+
+PRC,E52630LV3,1.8,20M,HSL,R2
+
+
+Intel, 1.8GHz, 20MB, FSB 8000MHz, 55W, Xeon E5-2630LV3, Haswell, Server, Bare Processor, R2
+
+
+
+
+YWYNG
+
+
+PRC,E52623V4,2.6,10M,BDW,R0
+
+
+Intel, 2.6GHz, 10MB, FSB 9600MHz, 85W, Xeon E5-2623V4, Broadwell, Server, Bare Processor, R0
+
+
+
+
+
+ 
+ 
+
+Dell -Charles RSocial Media and Communities ProfessionalDell Technologies | Enterprise Support Services#IWork4DellDid I answer your query? Please click on ‘Accept as Solution’. ‘Kudo’ the posts you like!
+
+
+
+"
+"Long story short I’ve got 2 servers one being a power edge r610 with 6 cores and the second server is a power edge r710 with 4 coresif I want to take the CPUs out of my power edge r610 will they be compatible and work in the power edge r710specs currently R610 cpu: Intel(R) Xeon(R) CPU E5645 @ 2.40GHzr710 cpu: Intel(R) Xeon(R) CPU E5620 @ 2.40GHz 
+
+
+
+					
+						
+					
+					.","Callum Simpson,
+ 
+Yes I can confirm that the E5645, as well as the E5620, are both compatible in both servers, and also have the same part #.
+ 
+Let me know if this helps.
+ 
+
+DELL-Chris HSocial Media and Communities ProfessionalDell Technologies | Enterprise Support Services#IWork4DellDid I answer your query? Please click on ‘Accept as Solution’. ‘Kudo’ the posts you like!
+
+
+
+"
+"Estou com esse erro 
+Service Tag [private information removed by moderator]
+Error Code: 2000-0251
+Validation: 106414
+
+
+
+					
+						
+					
+					.","Hello RicardoAmais
+ 
+I see from the screen shot a possible error was found and we can fix the problem by following these steps.
+*Update the BIOS.
+*Restart the computer, and then run the PSA diagnostics again.
+ 
+After that; If you still have an issue could you provide more information.
+
+Dell -Charles RSocial Media and Communities ProfessionalDell Technologies | Enterprise Support Services#IWork4DellDid I answer your query? Please click on ‘Accept as Solution’. ‘Kudo’ the posts you like!
+
+
+
+"
+"Solved: VRTX CMC update - Dell Community See previous thread.  As instructed, I attempted to update the standby cmc first.  According to the update page, it never updated.  But now I'm getting email after email from the CMC with warnings.  Clusters 2 and 3 keep dropping out - just says slot01 and slot 02 but will come back.  Both CMC's are showing the same, older firmware 2.20.  I downloaded the latest per Dell website.  Some of the warnings:Detailed Description: CMC is unable to obtain the CPU information from the server specified in the message. This occurs if there is no communication between CMC and iDRAC.Recommended Action: Do the following: 1) Reset iDRAC. 2) Reset CMC. If the issue persists, contact your service provider.Message ID: CMC8526Detailed Description: CMC is unable to obtain the memory information from the server specified in the message. This occurs if there is no communication between CMC and iDRAC.Recommended Action: Do the following: 1) Reset iDRAC. 2) Reset CMC. If the issue persists, contact your service provider.Message ID: CMC8527Got a series of these after the supposed update:\Detailed Description: A drive has entered the online state. This may be because the system just started or could be because a problem with the drive has been corrected.Recommended Action: No response action is required.Message ID: PDR26I have no idea how to reset the iDRAC or CMC.  Will resetting either shut down my server?
+
+
+
+					
+						
+					
+					.","I opened a ticket with Dell support.  They sent me a procedure to clear logs and reset using ssh(putty).  After that I was able to log in and update as needed.  
+
+
+"
+"Hello,I am trying to reset an iDRAC 6 user password that was configured by a previous sysadmin and forgotten.I have been trying to change it via System Settings. It appears to take the new password, but when I reboot and attempt to log in it doesn't work.Any idea as to this cause of this issue? Thanks.
+
+
+
+					
+						
+					
+					.","Is the server up to date on BIOS, iDrac, etc, also have you tried using the racadm racresetcfg, as outlined on Youngs link? It will cause the iDrac to reset to factory defaults, so would need to be reconfigured, but would eliminate the existing password.
+ 
+
+DELL-Chris HSocial Media and Communities ProfessionalDell Technologies | Enterprise Support Services#IWork4DellDid I answer your query? Please click on ‘Accept as Solution’. ‘Kudo’ the posts you like!
+
+
+
+"
+"Does anyone know of a PCIe video card that will work in my new PE T320 server? 
+I am unhappy with the VGA only output of the embedded Matrox card.
+Thanks for any suggestions.
+-robb
+
+
+
+					
+						
+					
+					.","Robb,
+You can use the nVidia NVS300 with the T320.  Dell part # (A4740647).  It will actually give you dual monitor support as well, if you'd like that functionality.
+Thanks,
+Brandon Arora
+Dell Technical Sale Rep
+
+
+"
+"I want to do an install of Windows 7 Pro, but I can't figure out how to get the machine to boot off a USB stick. No BIOS option that I see. My next option is to disassemble and add a drive to get the OS installed, but I'd rather not do that if possible. Any suggestions?
+
+
+
+					
+						
+					
+					.","The R210II has a slightly different bios from other 11g systems, here are the steps to boot to usb.
+1. during bootup, press F11 when prompted in the upper right corner
+2. Select Boot Settings then press <Enter> key.
+3. Select Set Legacy HardDisk Drive Order then press <Enter> key.
+4. Select HardDisk Drive #00 then press <Enter> key.
+5. Select USB device what you want to boot then press <Enter> key.
+6. You will see the HDD boot order has been changed.
+7. Press <ESC> key and press <Y> key to save the HDD boot order.
+8. Select HardDisk group then press <Enter> key to boot to the USB drive.
+
+Social Media Support#IWork4DellSystem Engineer
+
+
+
+"
